@@ -1,0 +1,26 @@
+extends baseEmail
+
+block content
+ table.main(role='presentation')
+  tr
+   td.wrapper
+    table(role='presentation' border='0' cellpadding='0' cellspacing='0')
+     tr
+      td
+       p Hi #{firstName},
+       p
+        | Welcome to Natours! 
+        | Your are now part of natore family and we are excited to have you.
+        | Please ask us anything you have on your mind we will be glad to help.
+        | Cheers & have a fun.
+       table.btn.btn-primary(role='presentation' border='0' cellpadding='0'      cellspacing='0')
+        tbody
+         tr
+          td(align='left')
+           table(role='presentation' border='0' cellpadding='0' cellspacing='0')
+            tbody
+             tr
+              td
+               a(href=`${url}` target='_blank') Call To Action
+       p Natours CEO
+       p Dzeavd Delihodzic
