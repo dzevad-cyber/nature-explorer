@@ -1,0 +1,11 @@
+.header {
+  background-color: green;
+  display: grid;
+  //   grid-template-columns: min-content 1fr min-content;
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 2rem;
+}

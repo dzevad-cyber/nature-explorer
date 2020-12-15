@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 *,
 *::after,
@@ -6,6 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+:root {
+  --fz-h1: 9.6rem;
+  --fz-h2: 6rem;
+  --fz-h3: 4.8rem;
+  --fz-h4: 3.4rem;
+  --fz-h5: 2.4rem;
+  --fz-h6: 2rem;
+  --fz-sb1: 1.6rem;
+  --fz-sb2: 1.4rem;
+  --fz-bd1: 1.6rem;
+  --fz-bd2: 1.4rem;
+  --fz-btn: 1.4rem;
+  --fz-cap: 1.2rem;
+  --fz-ovl: 1rem;
 }
 
 html {

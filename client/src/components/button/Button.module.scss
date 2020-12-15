@@ -1,0 +1,21 @@
+.button {
+  all: unset;
+  font-size: var(--fz-btn);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  padding: 1rem;
+  cursor: pointer;
+  height: 3.5rem;
+  padding: 0 1.5rem;
+
+  &__outlined {
+    @extend .button;
+    border: 1px solid #000;
+  }
+
+  &__filled {
+    @extend .button;
+    background-color: tomato;
+  }
+}
