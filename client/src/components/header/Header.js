@@ -2,15 +2,22 @@ import React from 'react';
 
 import styles from './Header.module.scss';
 
+import logo from '../../assets/icons/logo-white.png';
+
 import Button from '../button/Button';
+import Img from '../img/Img';
+import Nav from '../nav/Nav';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
-        <Button type="outlined">sign in</Button>
-        <Button type="filled">sign up</Button>
-      </nav>
+      <div className={styles.header_logo}>
+        <Img src={logo} alt="logo" />
+      </div>
+      <Nav className={styles.header_nav}>
+        <Button btnStyle="text">sign in</Button>
+        <Button btnStyle="contained">sign up</Button>
+      </Nav>
     </header>
   );
 };

@@ -1,11 +1,15 @@
 .header {
-  background-color: green;
   display: grid;
-  //   grid-template-columns: min-content 1fr min-content;
-}
+  grid-template-columns: min-content max-content;
+  align-items: center;
+  justify-content: space-between;
 
-.nav {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 2rem;
+  height: 7rem;
+  padding: 0 2rem;
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
+  background-color: var(--c-prim);
+
+  &_logo {
+    width: 5rem;
+  }
 }

@@ -8,14 +8,35 @@
   cursor: pointer;
   height: 3.5rem;
   padding: 0 1.5rem;
+  transition: all 0.3s ease-out;
+  border-radius: 3px;
+
+  &:hover {
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
+  }
 
   &__outlined {
     @extend .button;
-    border: 1px solid #000;
+    border: 1px solid var(--c-sec);
+    color: var(--c-sec);
+
+    &:hover {
+      background-color: rgba(54, 114, 211, 0.1);
+    }
   }
 
-  &__filled {
+  &__contained {
     @extend .button;
-    background-color: tomato;
+    background-color: var(--c-sec);
+    color: var(--c-on-sec);
+
+    &:hover {
+      background-color: var(--c-sec-light);
+    }
+  }
+
+  &__text {
+    @extend .button;
+    color: var(--c-sec);
   }
 }
