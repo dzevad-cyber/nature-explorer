@@ -17,6 +17,9 @@ const Header = () => {
       <Nav className={styles.header_nav}>
         <Button btnStyle="text">sign in</Button>
         <Button btnStyle="contained">sign up</Button>
+        <Button to="/signup" isLink="true" btnStyle="contained">
+          sign up
+        </Button>
       </Nav>
     </header>
   );

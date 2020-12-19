@@ -4,12 +4,14 @@
   align-items: center;
   justify-content: space-between;
 
-  height: 7rem;
+  height: 7vh;
   padding: 0 2rem;
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
-  background-color: var(--c-prim);
+  // background-color: var(--c-bg);
+  background-color: #202020;
 
   &_logo {
     width: 5rem;
   }
 }
+

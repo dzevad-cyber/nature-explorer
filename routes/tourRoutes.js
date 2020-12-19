@@ -9,6 +9,7 @@ const router = express.Router();
 
 router.use('/:tourId/reviews', reviewRouter);
 
+// public
 router
   .route('/top-5-tours')
   .get(tourMiddleware.aliasTopTours, tourController.getAllTours);
@@ -24,15 +25,14 @@ router
 
 router.route('/distances/:latlng/unit/:unit').get(tourController.getDistances);
 
+// private
 router.use(
   authMiddleware.protect,
   authMiddleware.restrictTo('admin', 'lead-guide')
 );
 
-router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
-
 router.route('/').post(tourController.createTour);
-
+router.route('/monthly-plan/:year').get(tourController.getMonthlyPlan);
 router
   .route('/:id')
   .delete(tourController.deleteTour)

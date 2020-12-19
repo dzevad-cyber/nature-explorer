@@ -1,0 +1,10 @@
+.popup {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: tomato;
+  display: none;
+  place-items: center;
+}

@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { htmlToText } from 'html-to-text';
+import htmlToText from 'html-to-text';
 import pug from 'pug';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
