@@ -1,0 +1,42 @@
+.loaderBox {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.spinner {
+  animation: rotations 1.4s linear infinite;
+}
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  stroke: var(--c-sec);
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite;
+}
+
+@keyframes rotations {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}

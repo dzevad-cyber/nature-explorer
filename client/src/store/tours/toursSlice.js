@@ -60,4 +60,7 @@ export const addTour = tour =>
     onSuccess: tourAdded.type,
   });
 
+// selectors
+export const getTours = state => state.tours.list;
+
 export default toursSlice.reducer;

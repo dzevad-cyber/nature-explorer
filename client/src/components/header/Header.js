@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 
@@ -12,12 +13,15 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header_logo}>
-        <Img src={logo} alt="logo" />
+        <Link to="/">
+          <Img src={logo} alt="logo" />
+        </Link>
       </div>
       <Nav className={styles.header_nav}>
-        <Button btnStyle="text">sign in</Button>
-        <Button btnStyle="contained">sign up</Button>
-        <Button to="/signup" isLink="true" btnStyle="contained">
+        <Button to="/login" btnStyle="text">
+          log in
+        </Button>
+        <Button to="/signup" btnStyle="contained">
           sign up
         </Button>
       </Nav>

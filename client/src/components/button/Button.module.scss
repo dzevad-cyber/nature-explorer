@@ -4,12 +4,15 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.25px;
-  padding: 1rem;
   cursor: pointer;
   height: 3.5rem;
+  width: max-content;
   padding: 0 1.5rem;
   transition: all 0.3s ease-out;
   border-radius: 3px;
+
+  display: grid;
+  align-content: center;
 
   &:hover {
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
@@ -37,6 +40,11 @@
 
   &__text {
     @extend .button;
-    color: var(--c-sec);
+    color: var(--c-on-sec);
+
+    &:hover {
+      background-color: var(--c-sec);
+      color: var(--c-on-sec);
+    }
   }
 }

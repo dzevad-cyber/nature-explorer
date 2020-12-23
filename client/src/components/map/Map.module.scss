@@ -1,0 +1,35 @@
+.mapWrapper {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.map {
+  //   display: grid;
+  //   width: 100%;
+  //   height: 100%;
+  width: 100vw;
+  height: 50vh;
+}
+
+.pin {
+  fill: var(--c-prim-light);
+  cursor: pointer;
+  border: 3px solid #000000;
+}
+
+.marker:hover .popup {
+  display: grid;
+  // position: absolute;
+  // top: 0;
+  // left: 200%;
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
+  margin-top: -24px;
+}
+
+.popup {
+  display: none;
+  background-color: tomato;
+}

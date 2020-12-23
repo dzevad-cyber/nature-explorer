@@ -23,8 +23,13 @@
   --fz-cap: 1.2rem;
   --fz-ovl: 1rem;
 
-  --c-prim: #02ce57;
-  --c-prim-light: #30ffa5;
+  --fz-input: 1.6rem;
+  --bd-input: #ccc;
+
+  --c-prim: #6200ee;
+  --c-prim-light: #9e47ff;
+  --c-prim-dark: #0400ba;
+  --c-on-prim: #ffffff;
 
   // Secondary colors are best for:
   //    Floating action buttons
@@ -32,25 +37,27 @@
   //    Highlighting selected text
   //    Progress bars
   //    Links and headlines
-  --c-sec: #3672d3;
-  --c-sec-light: #477ed7;
+  --c-sec: #03dac5;
+  --c-sec-light: #66fff8;
+  --c-sec-dark: #00a895;
+  --c-on-sec: #000000;
 
-  // On” colors are primarily applied to text, iconography, and strokes.
+  // On colors are primarily applied to text, iconography, and strokes.
   // Sometimes, they are applied to surfaces
-  --c-on-prim: #ffffff;
-  --c-on-sec: #ffffff;
-  --c-on-bg: #000000;
-  --c-on-surface: #000000;
-  --c-on-err: #ffffff;
-
   // The background color appears behind scrollable content
   --c-bg: #f6f6f6;
+  --c-on-bg: #000000;
 
   // Surface colors affect surfaces of components, such as cards, sheets, and menus.
   --c-surface: #ffffff;
+  --c-on-surface: #000000;
 
   // Error color indicates errors in components, such as invalid text in a text field.
   --c-err: #fa3838;
+  --c-on-err: #ffffff;
+
+  --header-height: 7vh;
+  --box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
 }
 
 html {

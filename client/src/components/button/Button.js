@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom';
 
 import styles from './Button.module.scss';
 
-const Button = ({ children, type, btnStyle, icon, to, isLink }) => {
+const Button = ({ children, type, btnStyle, icon, to, onClick }) => {
   return (
     <>
-      {isLink ? (
-        <Link to="/signup" className={styles[`button__${btnStyle}`]}>
+      {to ? (
+        <Link to={to} className={styles[`button__${btnStyle}`]}>
           {children}
         </Link>
       ) : (
-        <button type={type} className={styles[`button__${btnStyle}`]}>
+        <button
+          onClick={onClick}
+          type={type}
+          className={styles[`button__${btnStyle}`]}
+        >
           <div className={styles.button__icon}>{icon}</div>
           {children}
         </button>

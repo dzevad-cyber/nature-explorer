@@ -1,0 +1,59 @@
+.form {
+  padding: 2rem;
+  width: max-content;
+  height: max-content;
+  background-color: var(--c-surface);
+  box-shadow: var(--box-shadow);
+  width: 50vw;
+  height: 70vh;
+
+  display: grid;
+  grid-area: center;
+  grid-row-gap: 2rem;
+  justify-items: center;
+
+  font-size: 22px;
+
+  &_section {
+    display: grid;
+    grid-row-gap: 1rem;
+
+    position: relative;
+
+    label {
+      font-weight: 500;
+    }
+
+    input {
+      font-size: var(--fz-input);
+      padding: 1rem;
+      border: 1px solid var(--bd-input);
+      border-radius: 8px;
+    }
+  }
+
+  &_togglePassword {
+    all: unset;
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    font-size: var(--fz-cap);
+    cursor: pointer;
+  }
+
+  &_passwordConstraints {
+    font-size: var(--fz-cap);
+  }
+
+  &_forgotPassword {
+    font-size: var(--fz-cap);
+    color: var(--c-sec);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: var(--c-on-sec);
+    }
+  }
+}
