@@ -4,6 +4,7 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="worker-src blob:; child-src blob:; img-src data: blob: http://localhost:3000/ https://nature-exolorer.herokuapp.com/;
+      connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://localhost:3000/ http://localhost:3000/
      "
     />
     <meta charset="utf-8" />
@@ -17,11 +18,6 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Nature-explorer</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp.js"></script>
-    <script>
-      mapboxgl.workerUrl =
-        'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp-worker.js';
-    </script>
   </head>
   <body>
     <div id="root"></div>
