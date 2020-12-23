@@ -25,8 +25,8 @@ const Map = ({ data }) => {
           {...viewport}
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           onViewportChange={viewport => setViewport(viewport)}
-          // mapStyle="mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y"
-          mapStyle="mapbox://styles/mapbox/streets-v11"
+          mapStyle="mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y"
+          // mapStyle="mapbox://styles/mapbox/streets-v11"
           className={styles.map}
         >
           {data.map((tour, index) => {
