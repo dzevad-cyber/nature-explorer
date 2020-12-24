@@ -5,10 +5,7 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      worker-src blob: ; 
-      img-src data: blob: https://nature-exolorer.herokuapp.com;
-      script-src http: ; 
-      connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://nature-exolorer.herokuapp.com/api/v1/tours;
+      default-src 'self' https://* blob: data:; script-src https://* 'sha256-NwPGqa9Mxa7ZIeBSPi4K97Vtt3uBWjwtJsUlZfeqG5E' 'unsafe-eval'; style-src 'unsafe-inline' https://*; child-src blob: ; connect-src https://*;
       "
     />
     <meta charset="utf-8" />
