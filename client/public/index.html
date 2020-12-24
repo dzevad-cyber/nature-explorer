@@ -4,10 +4,11 @@
     <title>Nature-explorer</title>
     <meta
       http-equiv="Content-Security-Policy"
-      content="worker-src blob: ; 
+      content="
+      worker-src blob: ; 
       img-src data: blob: https://nature-exolorer.herokuapp.com;
-       script-src http: ; connect-src https://*.tiles.mapbox.com https://api.mapbox.com;
-      connect-src https://nature-exolorer.herokuapp.com/api/v1/tours ;
+      script-src https: ; 
+      connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://nature-exolorer.herokuapp.com/api/v1/tours;
       "
     />
     <meta charset="utf-8" />
