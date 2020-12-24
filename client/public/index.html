@@ -3,12 +3,7 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content=" default-src 'self'
-    https://*; connect-src 'self' https://* wss://*; font-src 'self' https://*
-    blob: data:; frame-src 'self' https://* blob: data:; img-src 'self'
-    https://* blob: data:; media-src 'self' https://* blob: data:; object-src
-    'self' https://* blob: data:; script-src 'self' https://* 'unsafe-inline'
-    'unsafe-eval'; style-src 'self' https://* 'unsafe-inline'; worker-src blob:;
+      content=" worker-src blob: ; img-src data: blob: ; script-src http: 'nonce-dummy'; connect-src https://*.tiles.mapbox.com https://api.mapbox.com
     "
     />
 
@@ -26,5 +21,10 @@
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp.js"></script>
+    <script>
+      mapboxgl.workerUrl =
+        'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp-worker.js';
+    </script>
   </body>
 </html>
