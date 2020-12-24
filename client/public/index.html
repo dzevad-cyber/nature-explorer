@@ -4,12 +4,20 @@
     <meta
       http-equiv="Content-Security-Policy"
       content="
-      script-src 'self' blob: https://nature-exolorer.herokuapp.com https://nature-exolorer.herokuapp.com/static/js/4.caea9441.chunk.js;
+      <!-- script-src 'self' blob: https://nature-exolorer.herokuapp.com https://nature-exolorer.herokuapp.com/static/js/4.caea9441.chunk.js; -->
+
+      
+      default-src * data: 'unsafe-eval' 'unsafe-inline' blob:
+      script-src * data: 'unsafe-eval' 'unsafe-inline' blob:
       worker-src blob: https://nature-exolorer.herokuapp.com https://nature-exolorer.herokuapp.com/static/js/4.caea9441.chunk.js; 
       child-src blob:; 
+
       img-src data: blob: http://localhost:3000/ https://nature-exolorer.herokuapp.com/;
-      connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://localhost:3000/ http://localhost:3000/ https://nature-exolorer.herokuapp.com/api/v1/tours 
-      ws://nature-exolorer.herokuapp.com https://nature-exolorer.herokuapp.com/static/js/4.caea9441.chunk.js; 
+
+      <!-- connect-src https://*.tiles.mapbox.com https://api.mapbox.com https://events.mapbox.com ws://localhost:3000/ http://localhost:3000/ https://nature-exolorer.herokuapp.com/api/v1/tours 
+      ws://nature-exolorer.herokuapp.com https://nature-exolorer.herokuapp.com/static/js/4.caea9441.chunk.js;  -->
+
+      connect-src https://api.mapbox.com https://*.tiles.mapbox.com data: blob:;
      "
     />
 
