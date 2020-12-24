@@ -3,7 +3,11 @@
   <head>
     <meta
       http-equiv="Content-Security-Policy"
-      content=" worker-src blob: ; img-src data: blob: ; script-src http: 'nonce-dummy'; connect-src https://*.tiles.mapbox.com https://api.mapbox.com
+      content="
+      worker-src blob: ; 
+      img-src data: blob: ; 
+      script-src http: 'nonce-dummy';
+       connect-src https://*.tiles.mapbox.com https://api.mapbox.com
     "
     />
 
@@ -21,10 +25,5 @@
   </head>
   <body>
     <div id="root"></div>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp.js"></script>
-    <script>
-      mapboxgl.workerUrl =
-        'https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl-csp-worker.js';
-    </script>
   </body>
 </html>
