@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import ReactMapGl, { Marker } from 'react-map-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+// import 'mapbox-gl/dist/mapbox-gl.css';
 
 import styles from './Map.module.scss';
 import { ReactComponent as PinSvg } from '../../assets/icons/room-24px.svg';
@@ -25,8 +25,8 @@ const Map = ({ data }) => {
           {...viewport}
           mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           onViewportChange={viewport => setViewport(viewport)}
-          mapStyle="mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y"
-          // mapStyle="mapbox://styles/mapbox/streets-v11"
+          // mapStyle="mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y"
+          mapStyle="mapbox://styles/mapbox/streets-v11"
           className={styles.map}
         >
           {data.map((tour, index) => {
