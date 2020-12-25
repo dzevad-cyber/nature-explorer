@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import ReactMapGl, { Marker } from 'react-map-gl';
-// import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 import styles from './Map.module.scss';
 import { ReactComponent as PinSvg } from '../../assets/icons/room-24px.svg';
